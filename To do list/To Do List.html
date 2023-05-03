@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>To Do List</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+     crossorigin="anonymous"
+     referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+     crossorigin="anonymous"
+     referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1 class="mt-3">TO DO LİST</h1>
+
+    <div class="container">
+       
+        <div class="card mt-3 new-task">
+            <div class="card-header" id="card-title">
+                New Task
+            </div>
+            <div class="card-body">
+                <form action="" class="task-form">
+                    <div class="input-group mt-2 mb-3 ">
+                        <input type="text" class="form-control task-input" id="task" placeholder="Type a new task">
+                        <button type="submit" class="btn" id="add-btn">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </form>
+
+                <div class="message-false">
+                    <p class="message-el-false">Enter a Task  <span>&#10069</span></p>
+                    <!-- &#10083 ,,, &#10071 &#10006 &#10062-->
+                </div>
+                <div class="message-true">
+                    <p class="message-el-true">  New Task Added &#9989 </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card mt-3 tasks-card">
+            <div class="card-header" id="tasks-title">
+            <h5>To Do's</h5>
+                <a href="#" class="btn btn-sm delete-all float-end" id="clear-btn">Delete All</a>
+            </div>
+            <ul class="list-group task-list">
+                <!-- <li class="list-group-item" id="task-list-item">
+                    <button class="clear">
+                        <i class="fas fa-times clear-item" id="clear-item"></i>
+                    </button>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+
+    <script src='js/main.js'></script>
+    <script src='js/bootstrap.min.js'></script>
+
+</body>
+</html>

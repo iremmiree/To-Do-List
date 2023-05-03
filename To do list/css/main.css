@@ -1,0 +1,139 @@
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+}
+body{
+    background-color:aliceblue;
+}
+.container{
+    max-width: 650px;
+}
+h1{
+    text-align: center;
+    font-family:fantasy;
+    color: darkorange;
+    font-size: 40px;
+    letter-spacing: 4px;
+    word-spacing: 7px;
+}
+.new-task{
+    border:1px solid rgb(89, 147, 194);
+}
+.new-task .card-body input{
+    border: 2px solid rgb(89, 147, 194);
+}
+.new-task .card-body input:focus{
+    border-color: rgb(89, 147, 194);
+    box-shadow: none;
+}
+.new-task .card-header{
+    background-color: rgb(89, 147, 194);
+    color:white;
+    font-weight: bold;
+}
+.new-task .card-body button{
+    background-color: rgb(89, 147, 194);
+    border: 2px solid rgb(89, 147, 194);
+}
+.new-task .card-body button:hover{
+    background-color: white;
+    color: rgb(89, 147, 194);
+}
+.new-task .card-body button i{
+    color: white;
+}
+.tasks-card{
+    border: rgb(89, 147, 194) 1px solid;
+}
+
+.tasks-card .card-header{
+    background-color: rgb(89, 147, 194);
+    font-weight: bold;
+    color: white;
+}
+h5{
+    display: inline;
+}
+.tasks-card .card-header a{
+    background-color: red;
+    border: 1px solid red;
+    color: white;
+}
+.tasks-card .card-header a:hover{
+    background-color: azure;
+    color: #2a174e;
+    border: 1px solid red;
+    transform: scale(0.85);
+}
+
+.list-group{
+    position: relative;
+}
+.list-group-item{
+    border:0;
+    border-bottom: 2px rgb(89, 147, 194) solid;
+    background-color:whitesmoke;
+    color: #252525;
+    font-weight: 500;
+}
+.list-group-item:hover{
+    transform: scale(1.05);
+}
+
+ul .clear{
+    position: absolute;
+    right: 5px;
+    border: none;
+    background-color: transparent;
+}
+i{
+    font-size: 20px;
+}
+i:hover{
+    transform: scale(1.1);
+    transition: 300ms;
+    color: rgb(89, 147, 194)!important;
+}
+.message-false{
+    background-color: rgb(255, 255,0, 0.6)!important;
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    top: -200px;
+    transition: transform 0.4s ease-in-out;
+}
+.message-true{
+    background-color: rgba(9, 255, 0, 0.6);
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    top: -200px;
+    transition: transform 0.4s ease-in-out;
+}
+.message-el-true{
+    font-weight: bold;
+    color: #2a174e;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.message-el-false{
+    font-weight: bold;
+    color:#2a174e;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.message-true.show,
+.message-false.show{
+    transform: translateY(300px);
+}
+span{
+    font-size: 22px;
+    color: red!important;
+}
